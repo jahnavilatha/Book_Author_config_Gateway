@@ -24,6 +24,6 @@ public class BookRepository {
     public Book findById(Long id) {
         return books.stream()
                 .filter(books -> books.getId().equals(id))
-                .findFirst().orElseThrow(()-> new RuntimeException("Book not found"));
+                .findFirst().orElseThrow(()-> new RuntimeException("Book is not found"));
     }
 }
