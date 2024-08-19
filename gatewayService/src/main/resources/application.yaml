@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gatewayService
+  config:
+    import: configserver:http://localhost:8888
+    cloud:
+      config:
+        uri: http://localhost:8888
+#  gateway:
+#    mvc:
+#      routes:
+#        -id: Author-service
+#          uri: lb://Author-service
+#          predicates:
+#            -path=/author/**
+#            -Method=GET
+#        -id: book-service
+#          uri: lb://Author-service
+#          predicates:
+#            -path=/author/
+
