@@ -1,0 +1,20 @@
+spring:
+  application:
+  name: Book-service
+#  config:
+#    import: optional:config-server:http://localhost:8888
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      name: Book-service
+server:
+  port: 8100
+eureka:
+  client:
+  service-url:
+  defaultZone: http://localhost:8761/eureka/
+springdoc:
+  api-docs:
+    path: /api   #http://localhost:8100/api
+  swagger-ui:
+    path: /swagger-ui-custom.html #http://localhost:8100/swagger-ui/index.html
